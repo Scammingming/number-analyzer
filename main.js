@@ -48,10 +48,9 @@ function numDigits(numImput) {
 
 function isPrime(numImput) {
   if (numImput < 2) return false;
-  if (numImput === 2) return true;
   for (let i = 2; i < numImput; i++) {
-    if (numImput % i === 0) {
-      return `false`;
-    } else return `true`;
+    console.log(numImput % i);
+    if (numImput % i == 0) return `false`;
   }
+  return `true`;
 }
